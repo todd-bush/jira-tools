@@ -1,0 +1,29 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 3,
+  "issues": [
+    {
+      "expand": "editmeta,renderedFields,transitions,changelog,operations",
+      "id": "10250",
+      "self": "http://test.com:80/rest/api/2/issue/10250",
+      "key": "TP-41",
+      "fields": ""
+    },
+    {
+      "expand": "editmeta,renderedFields,transitions,changelog,operations",
+      "id": "10249",
+      "self": "http://test.com:80/rest/api/2/issue/10249",
+      "key": "TP-40",
+      "fields": ""
+    },
+    {
+      "expand": "editmeta,renderedFields,transitions,changelog,operations",
+      "id": "10247",
+      "self": "http://test.com:80/rest/api/2/issue/10247",
+      "key": "TP-39",
+      "fields": ""
+    }
+  ]
+}

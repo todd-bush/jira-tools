@@ -1,0 +1,10 @@
+{
+	"jira-host":"awhere.atlassian.net",
+	"jira-port":443,
+	"jira-user":"awhere-rest",
+	"jira-pass":"rest-awhere",
+	"jira-api-version":"2",
+	"jira-verbose":false,
+	"jira-strict-ssl":true,
+	"jira-rest-url":"/rest/api/2"
+}

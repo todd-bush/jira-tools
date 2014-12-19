@@ -1,0 +1,473 @@
+ID,Rank,Work Item Type,State,Assigned To,Title,Priority,Blocked,Estimate,Description,Symptom,Steps To Reproduce,Severity
+6323,,Bug,Resolved,Yuli Bonner,Viewer - Error renaming an attribute without first selecting it.,1,No,1,,"http://appsqa.awhere.com/
+Viewer - Error renaming an attribute without first selecting it.
+7/230/2014 - [Rick] Verified issue exists on QA.
+","Loaded dataset Value Chain Landscape: Rice Odisha 2002-2014.
+Unselect all pre-selected attributes.
+Don't select but just right click on attribute ""1.0 R&D / 1.1 Discovery / Agricultural Gross Domestic Product"" and select Rename.
+Error: [Arg_NullReferenceException]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. See http://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30214.00&File=mscorlib.dll&Key=Arg_NullReferenceException
+Stack Trace:    at aWhere.Insite.Controls.Rename.<>c__DisplayClass5.<ProcessRename>b__2(Boolean success)
+   at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClass206.<UpdateVariable>b__205(Object sender, UpdateVariableCompletedEventArgs args)
+   at aWhere.Insite.Services.Analyzer.ProjectService.ProjectServiceClient.OnUpdateVariableCompleted(Object state)
+
+",High
+6488,,Bug,Proposed,Randy Raypole,Viewer Tool:  Error trying to create a new attribute,1,No,6,,"see below and attachment
+
+See History.
+","
+Using the LSMS Tanzania data, I tried to create a new attribute using the existing attributes “No. of Implements Rented/Borrowed” and “Price Paidto Rent/Borrow Implement” and got the error message below. I tried it twice – once with the attributes turned off in the palette and another time with the attributes turned on. Both times it returned the same error message. 
+",High
+6505,,Bug,Proposed,Randy Raypole,"Viewer - Map settings ""Data Layer"" and ""Opacity"" are missing if viewing by Geography: Point.  OK in Published Map view.",1,No,4,,"http://appsqa.awhere.com/
+Viewer - Map settings Data Layer and Opacity are missing if viewing by Geography: Point.  OK in Published Map view.
+*see attached doc with screen shots
+","Dataset: ICRISAT: HOPE Trials. Folder Data 2010R. Sub folder RABT Observations, all attributes.
+Table: Change to Geography: Point
+From Map Settings: Note Data Layer and Opacity are missing.
+Publish map and open link.
+From Published Map Settings: Note Data Layer and Opacity are listed.
+
+Controls should be visible but disabled (greyed out)
+",High
+6567,,Bug,Active,Keith Lee,Alert attachments says wrong format,1,No,,,"See attachment
+","see attachment
+",High
+6490,,Bug,Proposed,Randy Raypole,Viewer Tool:  bug while we were looking at the Aid Data 1960-2011,2,No,3,,"See attached and below.
+
+Table and chart are blank. 
+","Dataset: Foreign Aid 1961-2011
+Source: AidData
+Actions: 
+·        Selected attributes: Latitude, Longitude,Project Cost, Region, Year
+·        Selected geography: select only Southern Asia
+",Medium
+6354,,Bug,Proposed,Randy Raypole,Viewer - Error renaming an attribute when there are more than one attribute in the analysis with the same name.,2,No,4,,"http://appsqa.awhere.com/
+Viewer - Error renaming an attribute when there are more than one attribute in the analysis with the same name.
+","""Load dataset ""Progress Report of National Food Security Mission""
+Note that the Physical Achievements folder and Physical Targets folder have identically named attributes.
+Rename one of the attribute.
+ERROR
+
+Error Message: Error: [Arg_NullReferenceException]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. Seehttp://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30214.00&File=mscorlib.dll&Key=Arg_NullReferenceException
+Stack Trace: at aWhere.Insite.Controls.Rename.<>c__DisplayClass5.<ProcessRename>b__2(Boolean success)
+at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClass206.<UpdateVariable>b__205(Object sender, UpdateVariableCompletedEventArgs args)
+at aWhere.Insite.Services.Analyzer.ProjectService.ProjectServiceClient.OnUpdateVariableCompleted(Object state)
+
+",High
+6620,,Bug,Proposed,Randy Raypole,Viewer Tool: Year Order in Table,2,Yes,,,"See below
+","I’ve created an analysis that combines Value Chain Indicators: Maize Ethiopia data with attributes from Ethiopia Agricultural Sample Survey andEthiopia Agriculture and Food Data. I’ve been working with the attributes selected below, and when I group by year and filtered out any years prior to 2010, the years are out of order. I also tried grouping by year without the filter, and the years were stillin the wrong sequence. 
+
+",High
+6622,,Bug,Closed,,"Viewer - Error viewing dataset ""Feed the Future - Ghana 2012""",2,No,0.5,,"http://appsqa.awhere.com/
+Viewer - Error viewing dataset ""Feed the Future - Ghana 2012"". - Pro loaded dataset
+Error: [Arg_KeyNotFound]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. See http://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30214.00&File=mscorlib.dll&Key=Arg_KeyNotFound
+Stack Trace:    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at aWhere.Insite.Analyzer.LinqExtensions.FixupColumnOrder(AnalysisResultTable resultTable, Project selectedProject, List`1 previousVariableNames)
+   at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClassa0.<GetAnalysisData>b__9a(Object sender, GetSummaryAnalysisCompletedEventArgs args)
+   at aWhere.Insite.Services.Analyzer.AnalysisService.AnalysisServiceClient.OnGetSummaryAnalysisCompleted(Object state)
+","Loaded dataset into Viewer. Did nothing else.
+",High
+6626,,Bug,Proposed,Randy Raypole,Viewer Tool:  Error with CountrySTAT data,2,No,,,"see attached
+","see attached
+",High
+5731,,Bug,Proposed,Randy Raypole,"Viewer: SNV World - Baseline 2013 - Ghana Summary, FBO - Social Audits - ""Other FBOs in Social Audit (stakeholders)""-No data loading after selecting this attribute. Doesn't appear any data is available to display.",2,No,6,,"http://appsqa.awhere.com/
+
+Viewer - SNV World - Baseline 2013 - Ghana Summary, FBO - Social Audits - ""Other FBOs in Social Audit (stakeholders)""-No data loading after selecting this attribute. Doesn't appear any data is available to display.
+
+Dataset: SNV World - Baseline 2013 - Ghana Summary
+
+FBO - Social Audits - ""Other FBOs in Social Audit (stakeholders)""
+
+No data loading after selecting this attribute. Doesn't appear any data is available to display.
+
+*see attached screenshot
+
+2/18/14 [Rick] From John S. ""I’m seeing this as well, doesn’t show any of the attributes even when checked if in a group:.  This is a little odd because in v2 if we didn’t have data, it wouldn’t load the attribute at all. Honestly, this is probably better since it lets you know you are missing something you may have thought you had, but we probably need to handle the display differently.""
+","Viewer - SNV World - Baseline 2013 - Ghana Summary, FBO - Social Audits - ""Other FBOs in Social Audit (stakeholders)""- No data loading after selecting this attribute. Doesn't appear any data is available to display.
+
+Dataset: SNV World - Baseline 2013 - Ghana Summary
+Attribute: FBO - Social Audits - ""Other FBOs in Social Audit (stakeholders)""
+",Medium
+5777,,Bug,Proposed,Randy Raypole,CHECK WITH RHI - Viewer Tool: trying to open an analysis which contained the EADD dataset,2,Yes,,,"Design issue
+
+-------------------
+was trying to open an analysis which contained the EADD dataset, but that version of the dataset had been wiped from my STAR and replaced with a newer version. I think that's why the error happened.
+
+aWhere Error Report
+
+User Name: rhiannanprice@awhere.com
+URL: http://appsqa.awhere.com/
+
+Date and Time
+User (UTC-07:00) Mountain Time (US & Canada): February 27, 2014 12:14:37 PM
+CST: February 27, 2014 1:14:37 PM
+UTC: February 27, 2014 7:14:37 PM
+
+Library and Viewer Version: 3.0.5170.26559
+Weather Version: 1.0.5170.26547
+Silverlight Version: 5.1.20913.0
+
+Browser: Firefox 27.0 (Netscape 5.0)
+Operating System: Win32NT 6.1.7601.65536
+
+User Description: 
+
+Error Message: Error: [Arg_NullReferenceException]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. Seehttp://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.20913.00&File=mscorlib.dll&Key=Arg_NullReferenceException
+Stack Trace:    at aWhere.Insite.Controls.Chart.<GetNumericYAxisName>b__1f(Variable variable)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at aWhere.Insite.Controls.Chart.GetNumericYAxisName(DataColumn column)
+   at aWhere.Insite.Controls.Chart.BuildHistogramSeries(List`1 columns, Int32 numberOfBins)
+   at aWhere.Insite.Controls.Chart.OnHistogramSelected(Object sender, EventArgs e)
+   at aWhere.Insite.Controls.ChartTypeSelector.SetDefaultChartType(Boolean isPointLevel)
+   at aWhere.Insite.Controls.Chart.SetData(DataView dataView, AnalysisViewModel view)
+   at aWhere.Insite.Views.AnalyzerView.OnAnalysisDataChanged()
+   at aWhere.Insite.Views.AnalyzerView.ViewModel_PropertyChanged(Object sender, PropertyChangedEventArgs e)
+   at System.ComponentModel.PropertyChangedEventHandler.Invoke(Object sender, PropertyChangedEventArgs e)
+   at aWhere.Windows.ObservableObject.OnPropertyChanged(String propertyName)
+   at aWhere.Insite.ViewModels.AnalyzerViewModel.set_AnalysisData(AnalysisData value)
+   at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClassf2.<GetAnalysisData>b__ee(Object sender, GetSummaryAnalysisCompletedEventArgs args)
+   at aWhere.Insite.Services.Analyzer.AnalysisService.AnalysisServiceClient.OnGetSummaryAnalysisCompleted(Object state)
+","Contact Rhi
+",High
+6166,,Bug,Active,Randy Raypole,Viewer Tool: Chart not refreshed after Table Geography filtered to Country that has no previously used Years information.,2,No,1.5,,"http://appsqa.awhere.com/
+Viewer - Chart not refreshed after Table Geography filtered to Country that has no previously used Years information. 
+
+When select Haiti, table went blank and didn't refresh.
+","Loaded WDI - Poverty dataset.
+Selected attribute ""Poverty heaadcount ratio at national poverty line (% of rural population)""
+Table - Filtered Year to 1984
+Table - Filter Geography to Mexico
+Note: Table/Map/Chart info displayed correctly.
+Now filter to Country that doesn't have data for year 1984 (Haiti)
+Note: Table is blank (no way to reset filter other than unselecting the attribute), Map still positioned on Mexico , Chart still displaying Mexico data.
+",Low
+6296,,Bug,Proposed,Randy Raypole,Viewer Tool:  Error viewing Crop Pricing Data – 2000-2014,2,Yes,,,"See below and attachment
+","Encountered a bug yesterday on QA when working with the Crop Pricing Data – 2000-2014. I turned on all of the attributes, grouped by Admin 1,and tried to filter the temporal column. Although there is daily data from 2000 to 2014, the filter only showed a select few years (see screenshot #2). Even when grouped by year, the filter displays only a few of the years included in the data (just 2004 and2005). ",High
+6311,,Bug,Proposed,Randy Raypole,Viewer - Records with negative values (units %) not displayed correctly on Chart.,2,No,2,,"http://appsqa.awhere.com/
+Viewer - Records with negative values (units %) not displayed correctly on Chart. Y-axis scale incorrect.
+*see attached screen shot
+","Dataset: Load via Library.  Value Chain Indicators Dairy Bihar 1994-2013 (data attached)
+Select attribute: 2.2 Animal Genetics System / Annual growth rate indigenous bull cattle, 2003-07
+Value is -1.41
+Vieew Chart.  Y-axis scale is all -1's, Unit %
+",High
+6190,,Bug,Closed,,Viewer - Error selecting Publish analysis when no attributes are selected.,3,No,,,"http://appsqa.awhere.com/
+Viewer - Error selecting Publish analysis when no attributes are selected. [Arg_NullReferenceException]
+8/14/14 [Rick]  Can not reproduce.  Publish button grayed out if no attribute is selected.
+","Load analysis and unselect all attributes so that the right pane is blank (except message ""No palette attributes are checked..."")
+From top menu select SHARE / Publish Analysis.
+ERROR
+Error Message: Error: [Arg_NullReferenceException]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. Seehttp://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30214.00&File=mscorlib.dll&Key=Arg_NullReferenceException
+Stack Trace: at aWhere.Insite.Views.AnalyzerView.PublishAnalysis()
+at aWhere.Insite.Views.AnalyzerView.menuPublishAnalysis_Click(Object sender, RadRoutedEventArgs e)
+at Telerik.Windows.RadRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+at Telerik.Windows.RadRoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+at Telerik.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RadRoutedEventArgs routedEventArgs)
+at Telerik.Windows.EventRoute.InvokeHandlersImpl(Object source, RadRoutedEventArgs args, Boolean raisedAgain)
+at Telerik.Windows.RadRoutedEventHelper.RaiseEvent(DependencyObject element, RadRoutedEventArgs args)
+at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+at Telerik.Windows.Controls.RadMenuItem.OnClick()
+at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+at System.Windows.Controls.Control.OnMouseLeftButtonUp(Control ctrl, EventArgs e)
+at MS.Internal.JoltHelper.FireEvent(IntPtr unmanagedObj, IntPtr unmanagedObjArgs, Int32 argsTypeIndex, Int32 actualArgsTypeIndex, String eventName, UInt32 flags)
+",Medium
+6294,,Bug,Proposed,,"Viewer - White screen if selecting Chart type ""Radar - Filled"" or ""Radar - Symbols"" for 0 value record.",3,No,4,,"http://appsqa.awhere.com/
+Viewer - White screen if selecting Chart type ""Radar - Filled"" or ""Radar - Symbols"" for 0 value record.
+This is all I could get from the error message before the screen went white.  Error: [Arg_ArgumentException]
+","Load dataset from library - Progress Report of National Food Security Mission Rice 2013-2014.
+Select attribute ""Cluster Demonstrations of Hybrid Rice""
+Filter to record with a value of 0.  IE: Geography by ""None Show All"", Time 2012.   to Bihar which has a 0 value.
+Change Chart type to Radar - Filled or Radar - Symbols.
+Displays exception reporting window briefly but then a white screen.  Can't recover without reloading.
+
+",High
+5946,,Bug,Proposed,Randy Raypole,Viewer:  Error viewing CSISA Baseline Bangladesh 2011,3,Yes,,,"SEE ATTACHMENT
+","Contact Molly
+",Low
+5949,,Bug,Proposed,Randy Raypole,Viewer: error viewing CGIAR DIIVA data,3,Yes,1,,"When trying to VIEW the following DATASET:
+
+CGIAR DIIVA Project
+
+On the target environment:
+
+Apps.awhere.com (Production)
+
+Using the following Loader Build:
+
+Star3Pro_2014-03-05-Debug-A-AppsProd
+
+The following error was encountered:
+Platform becomes unresponsive and may lead to white screen of death (inconsistently) if you try to graph “Variety Names” attribute:
+","Contact John S
+",High
+5757,,Bug,Active,Randy Raypole,Viewer - Table attribute drop down list not refreshed after attribute is deselected in Palette.,3,Yes,4,,"***This is blocked due to the chart defect that causes the system to lock when the number of series is greater than the max page size. This behavior occurs when the attribute ""Administrative 1 Boundry (text)"" is selected.***
+
+http://appsqa.awhere.com/
+Viewer - Table attribute drop down list not refreshed after attribute is deselected in Palette.
+*see attached screen shot
+","In this example.
+-Loaded African Development Bank - AidData 2009-2010.
+-Selected attributes Administrative 1 Boundry (text), Country (text), Sector (text)
+-Table attribute drop down lists Country, Sector.  Sector is selected.
+-From Palette, unselect Country, Sector attributes.
+Note in Table attribute drop down lists -  Country, Sector still listed.
+-
+-
+",Low
+6733,,Bug,Proposed,Randy Raypole,Viewer - Errors Hannah is having with the LSMS Tanzania dataset,3,No,6,,"http://apps.awhere.com/ 
+
+Viewer - Errors Hannah is having with the LSMS Tanzania dataset
+
+Environment:
+aWhere Error Report
+
+User Name: hannahreed@awhere.com
+URL: http://apps.awhere.com/
+
+Date and Time
+User (UTC-07:00) Mountain Time (US & Canada): August 07, 2014 5:06:58 PM
+CST: August 07, 2014 5:06:58 PM
+UTC: August 07, 2014 11:06:58 PM
+
+Library and Viewer Version: 3.0.5318.28552
+Weather Version: 1.0.5318.15094
+Silverlight Version: 5.1.30514.0
+
+Browser: Chrome 36.0.1985.125 (Netscape 5.0)
+Operating System: Win32NT 6.1.7601.65536
+
+8-7-2014 [Rick]  From Hannah---I did not encounter any bugs/errors when I replicated the demo analysis in your account.
+
+8-7-14 [Rick] From Mark---I don't think it would be permission related, but it would be good to test with Hannah's account at some point and see if we can reproduce the issue.
+
+See History for further info. 
+","Dataset: LSMS Tanzania
+Reported by: Hannah
+http://apps.awhere.com/
+Browser: Chrome 36.0.1985.125 (both Hannah and test)
+
+User Description: Re-ordering folders
+Error Message: Error: [Arg_NullReferenceException]
+Stack Trace: at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClass2e.<MoveItems>b__2b(Object sender, MoveItemsCompletedEventArgs args)
+at aWhere.Insite.Services.Analyzer.ProjectService.ProjectServiceClient.OnMoveItemsCompleted(Object state)
+User Description: Turned off soil folder…. Changed chart type
+Error Message: Error: [ArgumentOutOfRange_Index]
+Stack Trace: at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+at System.Collections.Generic.List`1.get_Item(Int32 index)
+at aWhere.Insite.Controls.Chart.UpdateChart(ChartAttributeSelector selector, Boolean persistChanges)
+at aWhere.Insite.Controls.Chart.OnAttributeSelected(Object sender, EventArgs e)
+at aWhere.Insite.Controls.Charting.Subcomponents.ChartAttributeSelector.OnSelectNonNumeric(Object sender, RoutedEventArgs e)
+at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+at System.Windows.Controls.Primitives.ToggleButton.OnClick()
+at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+at System.Windows.Controls.Control.OnMouseLeftButtonUp(Control ctrl, EventArgs e)
+at MS.Internal.JoltHelper.FireEvent(IntPtr unmanagedObj, IntPtr unmanagedObjArgs, Int32 argsTypeIndex, Int32 actualArgsTypeIndex, String eventName, UInt32 flags)
+User Description: None
+Error Message: Error: [Arg_NullReferenceException]
+Stack Trace: at aWhere.Insite.ViewModels.AnalyzerViewModel.GetResolutionSettings(AnalysisViewModel dataView, String selectedAttributeName)
+at aWhere.Insite.ViewModels.AnalyzerViewModel.GetMapPoints(AnalysisViewModel dataView, String column, BingMapView mapExtent, ClassificationRequest classificationRequest, ObservableCollection`1 postFilter)
+at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClass194.<PrepareTiles>b__193(Object sender, PrepareTilesCompletedEventArgs e)
+at aWhere.Insite.Services.AnalyzerMap.TileService.PrepareTilesClient.OnPrepareTilesCompleted(Object state)
+",Medium
+6769,,Bug,Active,Mark Eaton,"Viewer - Error loading ""Feed the Future - Ghana 2012"" dataset and changing table Geography filtering to Point. NOTE: Added mid-sprint",3,No,,,"http://appsqa.awhere.com/
+Viewer - Error loading ""Feed the Future - Ghana 2012"" dataset and changing table Geography filtering to Point.
+
+","Library - Load ""Feed the Future - Ghana 2012"" dataset.  All attributes.
+All attributes load into Palette.  Five attributes are selected by default.
+Change Chart Geography group by filter to Point.
+ERROR
+Error: [Async_ExceptionOccurred]
+Arguments: 
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. See http://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30514.00&File=System.dll&Key=Async_ExceptionOccurred
+Stack Trace:    at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at aWhere.Insite.Services.AnalyzerMap.FeatureService.GetMapPointsCompletedEventArgs.get_Result()
+   at aWhere.Insite.ViewModels.AnalyzerViewModel.<>c__DisplayClass131.<GetMapPoints>b__130(Object sender, GetMapPointsCompletedEventArgs args)
+   at aWhere.Insite.Services.AnalyzerMap.FeatureService.FeatureServiceClient.OnGetMapPointsCompleted(Object state)
+Error: [HttpRequestTimedOutWithoutDetail]
+Arguments: http://services2qa.awhere.com/ws/analyzer 3.0 maps/Services/FeatureService.svc
+Debugging resource strings are unavailable. Often the key and arguments provide sufficient information to diagnose the problem. See http://go.microsoft.com/fwlink/?linkid=106663&Version=5.1.30514.00&File=System.ServiceModel.dll&Key=HttpRequestTimedOutWithoutDetail
+Stack Trace:    at System.ServiceModel.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.ClientBase`1.ChannelBase`1.EndInvoke(String methodName, Object[] args, IAsyncResult result)
+   at aWhere.Insite.Services.AnalyzerMap.FeatureService.FeatureServiceClient.FeatureServiceClientChannel.EndGetMapPoints(IAsyncResult result)
+   at aWhere.Insite.Services.AnalyzerMap.FeatureService.FeatureServiceClient.aWhere.Insite.Services.AnalyzerMap.FeatureService.IFeatureService.EndGetMapPoints(IAsyncResult result)
+   at aWhere.Insite.Services.AnalyzerMap.FeatureService.FeatureServiceClient.OnEndGetMapPoints(IAsyncResult result)
+   at System.ServiceModel.ClientBase`1.OnAsyncCallCompleted(IAsyncResult result)
+Error: 
+Stack Trace:    at System.Net.Browser.AsyncHelper.BeginOnUI(SendOrPostCallback beginMethod, Object state)
+   at System.Net.Browser.BrowserHttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelAsyncRequest.CompleteGetResponse(IAsyncResult result)
+Error: 
+Stack Trace:    at System.Net.Browser.BrowserHttpWebRequest.InternalEndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Browser.BrowserHttpWebRequest.<>c__DisplayClassa.<EndGetResponse>b__9(Object sendState)
+   at System.Net.Browser.AsyncHelper.<>c__DisplayClass4.<BeginOnUI>b__0(Object sendState)
+
+
+",High
+6610,,Change Request,Active,Dan Allen,DynAgg: SP - Native resolution calls and RecordId support,1,No,4,"For parity with the existing RFI usage, the Dynamic Aggregation stored procedure needs to be updated to support:
+
+1. Calls at native resolution (no dimensional drillway and aggregation)
+
+2. While at native resolution, return RecordId
+
+At the base level, we'll still leverage the stored procedure for filtering and group by, similar to how RFI is used.",,,
+6742,,User Story,Active,Keith Lee,Bettervia Export: Read from FTP Site & Write Output and Place on FTP Site,,,,"Acceptance Criteria (Input):
+
+1) As part of a scheduled process, in a prescribed location, locate excel file
+
+2) If file found, send to process spec'd in US6730
+
+3) If not found, sleep.
+
+
+Acceptance Criteria (Output):
+
+
+1) Send the output file to the aWhere FTP Site
+         - under the folder for the client
+         - in a sub-forder ""output"" (ensure folders are configured)
+
+QUESTION: What should the name of the file be >>
+
+
+END",,,
+6743,,User Story,Active,Randy Raypole,Bettervia Export: Send 1 or More Field's Crop Varieties via API to get the Predicted Harvest Date,,,,"Acceptance Criteria:
+
+1) Send the following data via the API:
+        - GDD Base Temp
+         - GDD Cap Temp
+         - Target GDD
+         - Transplant GDD
+         - Plant Date
+         - Planned Harvest Date
+
+2) if GDD Base Temp is blank, then default is 39.2 F
+
+3) if GDD Cap Temp is blank, then default is 68 F
+
+4) If Transplant GDD is blank, then set to Zero (0)
+
+5) Send the following  data  via the API
+         - Field name
+       - Lat and Long
+       - Variety
+       - Plant Date
+       - Target GDD
+       - Days to Harvest
+       - Planned Harvest Date
+       - Actual Harvest Date
+       - YTD GDD
+       - Projected Harvest Date
+       - Window (+/-)
+       - Earliest Historic Harvest
+       - Latest Historic Harvest
+       - Days until Harvest
+       - Days Early/Late
+
+
+END",,,
+6770,,User Story,Active,Matt Stephenson,Betteravia: GDD calculations in database,,,,,,,
+6771,,User Story,Active,Matt Stephenson,Betteravia: LTNs in database,,,,,,,
+6772,,User Story,Active,Matt Stephenson,Betteravia: Targeting a specific value in an accumulation series in db,,,,,,,
+6773,,User Story,Active,Matt Stephenson,Betteravia: Customer specific tying of the new db capabilities,,,,,,,
+6670,,User Story,Active,Randy Raypole,TECHNICAL:  Release Deployments,,,,,,,
+6729,,User Story,Active,Eskinder Zewdu,Betteravia Export: Transform Input/Output & Retrieve Calculations,,,,"As a Betteravia Field Manager, I want aWhere to transform the input it recieves from my Excel spreadsheet and retrieve the calculations needed to populate the columns for specific field/plot/crop properties.
+
+Acceptance Criteria:
+
+1) Transform the input from the Excel reader/writer into objects that can be consumed by the Data Access Library. The input values are below:
+ - Field name
+       - Lat and Long
+       - Variety
+       - Plant Date
+       - Target GDD
+       - Days to Harvest
+       - Planned Harvest Date
+       - Actual Harvest Date
+
+2) Retrieve the calculated values for these field/plot/crop properties 
+-YTD GDD
+-Projected Harvest Date
+-Window +/-
+-Earliest Historic Harvest
+-Latest Historic Harvest
+-Days until Harvest
+-Days Early/Late
+
+3) Transform the input and calculated values from AC1 and AC2 into objects that can be consumed.
+
+
+
+END",,,
+6730,,User Story,Active,Mark Eaton,Betteravia Export: Consume and Preserve Excel Template Input,,,,"As a Betteravia Field Manager, I want aWhere to preserve the existing Field Manager Excel content during the Harvest Prediction process, so that the resulting spreadsheet is what I’m accustomed to working with.
+
+Acceptance Criteria:
+1. Open the Field Manager Excel template as-is.
+
+2. Write the template back to a file supporting both of the following:
+
+3. The original non-calculated content, including the prediction process inputs, cell styles, and extraneous sheets.
+
+4. New content under the ""purple"" section.
+
+5. The data fields (and corresponding column names) for the output spreadsheet includes the following:
+- Field name
+- Lat and Long
+- Variety
+- Plant Date
+- Target GDD
+- Days to Harvest
+- Planned Harvest Date
+- Actual Harvest Date
+- YTD GDD
+- Projected Harvest Date
+- Window (+/-)
+- Earliest Historic Harvest
+- Latest Historic Harvest
+- Days until Harvest
+- Days Early/Late
+
+6. Each Crop in the output spreadsheet is written to a separate sheet in the spreadsheet, where the name of the sheet is based on the name of the crop
+
+7. Output file is Excel xlsx spreadsheet",,,
+6732,,User Story,Active,Matt Stephenson,Betteravia: Parent db user story,,,,"Acceptance Criteria:
+
+1) Transplant GDD value is added to the accum GDD to get the YTD GDD
+           - this is any GDD days that were gained prior to planting e.g., it was in a greenhouse prior to planting
+
+2) Window (+ / -)
+      - is the difference between the highest GDD and the Lowest GDD once the max and min are discarded
+
+3) Days Early / Late
+         - Current Projected Harvest date - Planned Harvest date
+
+4) Discard the highest and the lowest GDD years for the field
+         e.g., if there are 10 years of data for a field
+                 count the gdd for each year
+                 highest GDD year (warmest) is discarded
+                 lowest GDD year (coldest) is discarded
+                 the remaining 8 years (in the middle) are averaged together to get the harvest date
+
+5) Determine the Predicted Harvest Date
+
+
+END
+
+----- Matt's notes below ------
+
+No idea what that description above refers to. Appears to be solely how Betteravia wants their numbers run. That will all be encapsulated in one proc for them. RR confirms these notes are straight from JP, they were not encapsulated in any document.
+
+Hijacking this user story to cover database specific requirements of the Betteravia design laid out by the whole team on 8/11, customer and noncustomer specific parts in tasks.
+
+As a data access layer, I want to hit the db up for performant GDD targeting data for large swaths of the earth, so I can feed that to APIs or whoever needs it from me.",,,

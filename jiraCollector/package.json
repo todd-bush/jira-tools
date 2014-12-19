@@ -1,0 +1,29 @@
+{
+  "name": "Jira-rest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/jira-rest-api.js"
+  },
+  "dependencies": {
+    "underscore": "*", 
+    "request" : "*",
+    "string" : "*",
+    "nconf":"*",
+    "Q":"*" 
+  },
+  "devDependencies" : {
+    "grunt":"*",
+    "mocha":"*",
+    "should":"*",
+    "nock":"~0.44.3",
+    "grunt-env":"*",
+    "grunt-contrib-clean":"*",
+    "grunt-contrib-jshint":"*",
+    "grunt-execute":"*",
+    "grunt-istanbul":"*",
+    "grunt-mocha-test":"*",
+    "grunt-docco-dir":"*",
+    "grunt-node-inspector":"*"
+  }
+}

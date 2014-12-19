@@ -1,0 +1,23 @@
+{
+  "name": "tfs-jira-converter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node collector"
+  },
+  "dependencies": {
+    "underscore": "*", 
+    "string" : "*",
+    "nconf":"*",
+    "csv":"0.2.*" 
+  },
+  "devDependencies" : {
+    "grunt":"*",
+    "mocha":"*",
+    "should":"*",
+    "nock":"*",
+    "grunt-simple-mocha":"*",
+    "grunt-contrib-jshint":"*",
+    "grunt-execute":"*"
+  }
+}
