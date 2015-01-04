@@ -77,7 +77,7 @@ var toJSON = function(something)
  	this.RAWV = {'r':'reporter', 'a':'assignee', 
  	'w':'watchers','v':'voters'};
  	this.RAWVKeys = __.keys(this.RAWV);
-turn
+
  	//  on logger if verbose is true
  	if(verbose !== true) { logger = function(){}; }
 
